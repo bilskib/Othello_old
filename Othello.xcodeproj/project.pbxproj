@@ -14,6 +14,10 @@
 		0F4C3821229C739100307C36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F4C381F229C739100307C36 /* LaunchScreen.storyboard */; };
 		0F4C3829229C74CE00307C36 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4C3828229C74CE00307C36 /* Board.swift */; };
 		0F4C382B229C7B3E00307C36 /* Othello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4C382A229C7B3E00307C36 /* Othello.swift */; };
+		0FF984AB22B67F9900124094 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF984AA22B67F9900124094 /* Move.swift */; };
+		0FF984AD22B6802600124094 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF984AC22B6802600124094 /* Player.swift */; };
+		0FF984AF22B6803100124094 /* Strategist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF984AE22B6803100124094 /* Strategist.swift */; };
+		0FF984B222B6804E00124094 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF984B122B6804E00124094 /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		0F4C3822229C739100307C36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F4C3828229C74CE00307C36 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		0F4C382A229C7B3E00307C36 /* Othello.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Othello.swift; sourceTree = "<group>"; };
+		0FF984AA22B67F9900124094 /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
+		0FF984AC22B6802600124094 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		0FF984AE22B6803100124094 /* Strategist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strategist.swift; sourceTree = "<group>"; };
+		0FF984B122B6804E00124094 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 		0F4C3815229C739100307C36 /* Othello */ = {
 			isa = PBXGroup;
 			children = (
+				0FF984B022B6803500124094 /* View */,
 				0FF984A722B6512D00124094 /* Model */,
 				0FF984A922B653B500124094 /* Controller */,
 				0FF984A822B6538100124094 /* Supporting Files */,
@@ -72,6 +81,9 @@
 			children = (
 				0F4C3828229C74CE00307C36 /* Board.swift */,
 				0F4C382A229C7B3E00307C36 /* Othello.swift */,
+				0FF984AA22B67F9900124094 /* Move.swift */,
+				0FF984AC22B6802600124094 /* Player.swift */,
+				0FF984AE22B6803100124094 /* Strategist.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -92,6 +104,14 @@
 				0F4C3818229C739100307C36 /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		0FF984B022B6803500124094 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0FF984B122B6804E00124094 /* GameScene.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,9 +185,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FF984AB22B67F9900124094 /* Move.swift in Sources */,
 				0F4C3819229C739100307C36 /* ViewController.swift in Sources */,
+				0FF984B222B6804E00124094 /* GameScene.swift in Sources */,
 				0F4C3817229C739100307C36 /* AppDelegate.swift in Sources */,
 				0F4C3829229C74CE00307C36 /* Board.swift in Sources */,
+				0FF984AD22B6802600124094 /* Player.swift in Sources */,
+				0FF984AF22B6803100124094 /* Strategist.swift in Sources */,
 				0F4C382B229C7B3E00307C36 /* Othello.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
