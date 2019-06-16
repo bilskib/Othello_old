@@ -8,16 +8,10 @@
 
 import Foundation
 
-enum BoardCellType {
-    case empty
-    case white
-    case black
-}
-
 struct Board {
     
     let rows: Int, columns: Int
-    var grid: [BoardCellType]
+    var grid: [PlayerColor]
     
     init(rows: Int, columns: Int) {
         self.rows = rows
@@ -29,7 +23,7 @@ struct Board {
         return row >= 0 && row < rows && column >= 0 && column < columns
     }
     
-    subscript(row: Int, column: Int) -> BoardCellType {
+    subscript(row: Int, column: Int) -> PlayerColor {
         get {
             assert(indexIsValid(row: row, column: column), "Index out of range!")
             return grid[(row * columns) + column]

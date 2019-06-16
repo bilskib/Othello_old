@@ -66,12 +66,12 @@
 		0F4C3815229C739100307C36 /* Othello */ = {
 			isa = PBXGroup;
 			children = (
-				0FF984B022B6803500124094 /* View */,
 				0FF984A722B6512D00124094 /* Model */,
+				0FF984B022B6803500124094 /* View */,
 				0FF984A922B653B500124094 /* Controller */,
-				0FF984A822B6538100124094 /* Supporting Files */,
 				0F4C3822229C739100307C36 /* Info.plist */,
 				0F4C381A229C739100307C36 /* Main.storyboard */,
+				0FF984A822B6538100124094 /* Supporting Files */,
 			);
 			path = Othello;
 			sourceTree = "<group>";
