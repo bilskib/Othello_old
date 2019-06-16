@@ -10,7 +10,7 @@ import Foundation
 
 class Othello {
     
-    var board = Board(rows: 8, columns: 8)
+    var board = Board()
     
     func setInitialBoard() {
         board[3,3] = .white
