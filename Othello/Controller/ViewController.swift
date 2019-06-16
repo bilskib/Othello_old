@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         var game = Othello()
         game.clear()
         game.setInitialBoard()
-        game.printBoardToConsole()
+        game.printBoardGraphicToConsole()
         
     }
 }

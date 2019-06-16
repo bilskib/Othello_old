@@ -6,4 +6,16 @@
 //  Copyright © 2019 Bartosz Bilski. All rights reserved.
 //
 
-import Foundation
+import GameplayKit
+
+class Move: NSObject, GKGameModelUpdate {
+    
+    var coordinate: CGPoint
+    
+    // Required by GameplayKit
+    var value: Int = 0
+    
+    init(_ coordinate: CGPoint) {
+        self.coordinate = coordinate
+    }
+}

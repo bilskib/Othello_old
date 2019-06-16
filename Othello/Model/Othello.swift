@@ -28,7 +28,7 @@ class Othello {
         }
     }
     
-    func printB() {
+    func printBoardToConsole() {
         for row in 0..<board.rows {
             for column in 0..<board.columns {
                 print("position(",row, ",",column,")", " has value:", self.board[row, column])
@@ -36,7 +36,7 @@ class Othello {
         }
     }
     
-    func printBoardToConsole() {
+    func printBoardGraphicToConsole() {
         print("..................................................")
         print("  0     1     2     3     4     5     6     7  /")
         for i in 0..<board.columns {
