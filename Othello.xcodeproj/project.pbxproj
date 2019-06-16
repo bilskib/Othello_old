@@ -91,8 +91,8 @@
 		0FF984A822B6538100124094 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0F4C3816229C739100307C36 /* AppDelegate.swift */,
 				0F4C381D229C739100307C36 /* Assets.xcassets */,
+				0F4C3816229C739100307C36 /* AppDelegate.swift */,
 				0F4C381F229C739100307C36 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";

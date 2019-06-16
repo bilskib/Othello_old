@@ -7,18 +7,36 @@
 //
 
 import UIKit
+import SpriteKit
 
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
-        var game = Othello()
+        if let view = self.view as? SKView {
+            let scene = GameScene(size: UIScreen.main.bounds.size)
+            scene.scaleMode = .aspectFill
+            view.presentScene(scene)
+        }
+    
+        let game = Othello()
         game.clear()
         game.setInitialBoard()
         game.printBoardGraphicToConsole()
-        
     }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
 }
 
